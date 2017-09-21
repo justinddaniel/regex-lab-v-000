@@ -6,10 +6,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  words = []
-  words << text.scan(/\A(un)/)
-  words << words.end_with?("ing")
-  words
+  text.match(/\w+ing/)
 end
 
 def words_five_letters_long(text)
